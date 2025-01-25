@@ -92,7 +92,6 @@ public class CommonMethods extends PageInitializer{
     }
 
     public byte[] takeScreenshot(String fileName){
-        //it accepts array of byte in cucumber for the screenshot
         TakesScreenshot ts = (TakesScreenshot) driver;
         byte[] picByte = ts.getScreenshotAs(OutputType.BYTES);
         File sourceFile = ts.getScreenshotAs(OutputType.FILE);

@@ -12,6 +12,9 @@ public class LoginPage extends CommonMethods {
     public WebElement passwordField;
     @FindBy(id = "btnLogin")
     public WebElement loginBtn;
+    @FindBy(id = "spanMessage")
+    public WebElement errorMsg;
+
 
 
     public LoginPage(){
